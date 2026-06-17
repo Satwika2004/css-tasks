@@ -1,78 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid Gallery</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .parent{
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-template-rows:repeat(6,1fr);
+            grid-template-areas:"img1 img2 img2 img2 img3 img4"
+            "img5 img2 img2 img2 img6 img7"
+            "img8 img9 img10 img11 img11 img11"
+            "img12 img13 img14 img11 img11 img11"
+            "img15 img16 img16 img17 img18 img19"
+            "img20 img16 img16 img21 img21 img21";
+            max-width:580px;
+            aspect-ratio:1;
+            margin:0 auto;
+            gap:10px;
+        }
+        img{
+          width:100%;
+          height:100%;
+          object-fit:cover;
+       }
+        .img1{
+          grid-area:img1;}
+        .img2{
+          grid-area:img2;
+        }
+        .img3{
+            grid-area:img3;
+        }
 
-    body {
-      
-      margin:20px;
-      background-color: #1a1a2e;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      grid-template-rows:repeat(9,1fr);
-      grid-template-areas:
-        "grapes grapes straw straw straw melon melon melon melon"
-        "grapes grapes straw straw straw melon melon melon melon"
-        "orange orange orange orange orange melon melon melon melon"
-        "orange orange orange orange orange melon melon melon melon"
-        "orange orange orange orange orange melon melon melon melon"
-        "papaya papaya papaya papaya papaya pine pine pine pine"
-        "papaya papaya papaya papaya papaya pine pine pine pine"
-        "papaya papaya papaya papaya papaya pine pine pine pine"
-        "papaya papaya papaya papaya papaya pine pine pine pine";
-      gap: 10px;
-      max-width: 650px;
-      margin:0 auto;
-      aspect-ratio:1;
-    }
-
-    
-     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      
-    }
-
-    .grapes { grid-area: grapes; }
-    .strawberries { grid-area: straw; }
-    .watermelon { grid-area: melon; }
-    .orange { grid-area: orange; }
-    .papaya { grid-area: papaya; }
-    .pineapple { grid-area: pine; }
-  </style>
+        .img4{
+            grid-area:img4;
+        }
+        .img5{
+            grid-area:img5;
+        }
+        .img6{
+            grid-area:img6;
+        }
+        .img7{
+            grid-area:img7;
+        }
+        .img8{
+            grid-area:img8;
+        }
+        .img9{
+            grid-area:img9;
+        }
+        .img10{
+            grid-area:img10;
+        }
+        .img11{
+            grid-area:img11;
+        }
+        .img12{
+            grid-area:img12;
+        }
+        .img13{
+            grid-area:img13;
+        }
+        .img14{
+            grid-area:img14;
+        }
+        .img15{
+            grid-area:img15;
+        }
+        .img16{
+            grid-area:img16;
+        }
+        
+        .img17{
+            grid-area:img17;
+        }
+        .img18{
+            grid-area:img18;
+        }
+        .img19{
+            grid-area:img19;
+        }
+        .img20{
+            grid-area:img20;
+        }
+        .img21{
+            grid-area:img21;
+        }
+        
+    </style>
 </head>
+
 <body>
-  <div class="gallery">
-    <div class="gallery-item grapes">
-      <img src="https://s.yimg.com/fz/api/res/1.2/1tS2k7FPIA42Q.8cCSgqxQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/56/07/79/560779ce938d630433bf2a795d41a4ed.jpg" alt="Grapes">
+    <div class="parent">
+        <img src="https://picsum.photos/150/150?random=1" alt="" class="img1">
+        <img src="https://picsum.photos/300/300?random=2" alt="" class="img2">
+        <img src="https://picsum.photos/300/300?random=3" alt="" class="img3">
+        <img src="https://picsum.photos/300/300?random=4" alt="" class="img4">
+        <img src="https://picsum.photos/300/300?random=5" alt="" class="img5">
+        <img src="https://picsum.photos/300/300?random=6" alt="" class="img6">
+        <img src="https://picsum.photos/300/300?random=7" alt="" class="img7">
+        <img src="https://picsum.photos/300/300?random=8" alt="" class="img8">
+        <img src="https://picsum.photos/300/300?random=9" alt="" class="img9">
+        <img src="https://picsum.photos/300/300?random=10" alt="" class="img10">
+        <img src="https://picsum.photos/300/300?random=11" alt="" class="img11">
+        <img src="https://picsum.photos/300/300?random=12" alt="" class="img12">
+        <img src="https://picsum.photos/300/300?random=13" alt="" class="img13">
+        <img src="https://picsum.photos/300/300?random=14" alt="" class="img14">
+        <img src="https://picsum.photos/300/300?random=15" alt="" class="img15">
+        <img src="https://picsum.photos/300/300?random=16" alt="" class="img16">
+        <img src="https://picsum.photos/300/300?random=17" alt="" class="img17">
+        <img src="https://picsum.photos/300/300?random=18" alt="" class="img18">
+        <img src="https://picsum.photos/300/300?random=19" alt="" class="img19">
+        <img src="https://picsum.photos/300/300?random=20" alt="" class="img20">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.KE72uok-PMdKnnZkN1S4aAHaE8?pid=Api&P=0&h=180" alt="" class="img21">
+        
+    
+        
     </div>
-    <div class="gallery-item strawberries">
-      <img src="https://up.yimg.com/ib/th/id/OIP.hxCZcXMwGhvMDq2FnrAaQAHaE7?pid=Api&rs=1&c=1&qlt=95&w=187&h=124" alt="Strawberries">
-    </div>
-    <div class="gallery-item watermelon">
-      <img src="https://s.yimg.com/fz/api/res/1.2/qfqoyjakUA7hb_ZZ79CpiA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/20/c5/db/20c5dbfbc59bd1b0fb63e81e8726eb8b.jpg" alt="Watermelon">
-    </div>
-    <div class="gallery-item orange">
-      <img src="https://up.yimg.com/ib/th/id/OIP.LmfIvpXdte3MLfcytdeE5wHaHa?pid=Api&rs=1&c=1&qlt=95&w=110&h=110" alt="Orange">
-    </div>
-    <div class="gallery-item papaya">
-      <img src="https://up.yimg.com/ib/th/id/OIP.l8misdwaoOkCFwfk2G-M1QHaGa?pid=Api&rs=1&c=1&qlt=95&w=141&h=122" alt="Papaya">
-    </div>
-    <div class="gallery-item pineapple">
-      <img src="https://up.yimg.com/ib/th/id/OIP.OLFstoVTfDys8PloTbTySQHaE8?pid=Api&rs=1&c=1&qlt=95&w=180&h=120" alt="Pineapple">
-    </div>
-  </div>
 </body>
 </html>
