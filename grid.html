@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      
+      margin:20px;
+      background-color: #1a1a2e;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows:repeat(9,1fr);
+      grid-template-areas:
+        "grapes grapes straw straw straw melon melon melon melon"
+        "grapes grapes straw straw straw melon melon melon melon"
+        "orange orange orange orange orange melon melon melon melon"
+        "orange orange orange orange orange melon melon melon melon"
+        "orange orange orange orange orange melon melon melon melon"
+        "papaya papaya papaya papaya papaya pine pine pine pine"
+        "papaya papaya papaya papaya papaya pine pine pine pine"
+        "papaya papaya papaya papaya papaya pine pine pine pine"
+        "papaya papaya papaya papaya papaya pine pine pine pine";
+      gap: 10px;
+      max-width: 650px;
+      margin:0 auto;
+      aspect-ratio:1;
+    }
+
+    
+     img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+
+    .grapes { grid-area: grapes; }
+    .strawberries { grid-area: straw; }
+    .watermelon { grid-area: melon; }
+    .orange { grid-area: orange; }
+    .papaya { grid-area: papaya; }
+    .pineapple { grid-area: pine; }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item grapes">
+      <img src="https://s.yimg.com/fz/api/res/1.2/1tS2k7FPIA42Q.8cCSgqxQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/56/07/79/560779ce938d630433bf2a795d41a4ed.jpg" alt="Grapes">
+    </div>
+    <div class="gallery-item strawberries">
+      <img src="https://up.yimg.com/ib/th/id/OIP.hxCZcXMwGhvMDq2FnrAaQAHaE7?pid=Api&rs=1&c=1&qlt=95&w=187&h=124" alt="Strawberries">
+    </div>
+    <div class="gallery-item watermelon">
+      <img src="https://s.yimg.com/fz/api/res/1.2/qfqoyjakUA7hb_ZZ79CpiA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/20/c5/db/20c5dbfbc59bd1b0fb63e81e8726eb8b.jpg" alt="Watermelon">
+    </div>
+    <div class="gallery-item orange">
+      <img src="https://up.yimg.com/ib/th/id/OIP.LmfIvpXdte3MLfcytdeE5wHaHa?pid=Api&rs=1&c=1&qlt=95&w=110&h=110" alt="Orange">
+    </div>
+    <div class="gallery-item papaya">
+      <img src="https://up.yimg.com/ib/th/id/OIP.l8misdwaoOkCFwfk2G-M1QHaGa?pid=Api&rs=1&c=1&qlt=95&w=141&h=122" alt="Papaya">
+    </div>
+    <div class="gallery-item pineapple">
+      <img src="https://up.yimg.com/ib/th/id/OIP.OLFstoVTfDys8PloTbTySQHaE8?pid=Api&rs=1&c=1&qlt=95&w=180&h=120" alt="Pineapple">
+    </div>
+  </div>
+</body>
+</html>
